@@ -1,0 +1,8 @@
+.depthDataContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.depthToken{
+    margin-top: 20px;
+}

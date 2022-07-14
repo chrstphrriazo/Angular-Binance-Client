@@ -1,0 +1,5 @@
+<h1 class="text-center text-success" *ngIf="testData; else elseBlock">Server is Online!</h1>
+<ng-template #elseBlock><h1 class="text-center text-danger">Server is Offline!</h1></ng-template>
+
+<a routerLink="/unsigned-api" class="previous">Go back</a>
+<router-outlet></router-outlet>

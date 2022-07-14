@@ -1,0 +1,48 @@
+<h2 class="depthToken text-center">Account Orders</h2>
+<div>
+  <div class="row">
+<!--    <div class="col-md-4"></div>-->
+    <div>
+      <table class="table table-bordered">
+        <tr>
+          <th colspan="18"><h3 class="text-center my-4">All Orders</h3></th>
+        </tr>
+        <tr>
+          <th>Client Order ID</th>
+          <th>Cummulative Quote Qty</th>
+          <th>Executed Qty</th>
+          <th>Iceberg Qty</th>
+          <th>Order ID</th>
+          <th>Orig Qty</th>
+          <th>Orig Quote Order Qty</th>
+          <th>Price</th>
+          <th>Side</th>
+          <th>Status</th>
+          <th>Stop Price</th>
+          <th>Symbol</th>
+          <th>Time In Force</th>
+          <th>Type</th>
+        </tr>
+        <tr *ngFor="let data of allorderData; let i = index ">
+          <td>{{ allorderData?.[0].clientOrderId }}</td>
+          <td>{{ allorderData?.[0].cummulativeQuoteQty }}</td>
+          <td>{{ allorderData?.[0].executedQty }}</td>
+          <td>{{ allorderData?.[0].icebergQty }}</td>
+          <td>{{ allorderData?.[0].orderId }}</td>
+          <td>{{ allorderData?.[0].origQty }}</td>
+          <td>{{ allorderData?.[0].origQuoteOrderQty }}</td>
+          <td>{{ allorderData?.[0].price }}</td>
+          <td>{{ allorderData?.[0].side }}</td>
+          <td>{{ allorderData?.[0].status }}</td>
+          <td>{{ allorderData?.[0].stopPrice }}</td>
+          <td>{{ allorderData?.[0].symbol }}</td>
+          <td>{{ allorderData?.[0].timeInForce }}</td>
+          <td>{{ allorderData?.[0].type }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<!--<div>{{ allorderData?.[0].symbol }}</div>-->

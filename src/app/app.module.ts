@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SignedApiModule } from './SignedAPI/signedapi.module';
+import { UnsignedApiModule } from './UnsignedAPI/unsignedapi.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SignedApiModule,
+    UnsignedApiModule
   ],
   providers: [],
   bootstrap: [AppComponent]

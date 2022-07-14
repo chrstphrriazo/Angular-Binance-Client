@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\SignedAPI",
+    "\\src\\app\\SignedAPI\\AllOrders",
+    "\\src\\app\\SignedAPI\\RateLimitOrder",
+    "\\src\\app\\UnsignedAPI",
+    "\\src\\app\\UnsignedAPI\\Depth",
+    "\\src\\app\\UnsignedAPI\\Ping",
+    "\\src\\app\\UnsignedAPI\\TickerPrice"
+  ],
+  "SelectedNode": "\\src\\app\\UnsignedAPI\\Ping\\ping.component.ts",
+  "PreviewInSolutionExplorer": false
+}

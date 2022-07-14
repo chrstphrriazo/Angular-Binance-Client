@@ -1,0 +1,30 @@
+<h2 class="depthToken text-center">Rate Limit Order</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <table class="table table-bordered">
+        <tr>
+          <th colspan="5"><h3 class="text-center my-4">Rate Limits</h3></th>
+        </tr>
+        <tr>
+          <th>Count</th>
+          <th>Interval</th>
+          <th>Interval Num</th>
+          <th>Limit</th>
+          <th>Rate Limit Type</th>
+        </tr>
+        <tr *ngFor="let data of ratelimitData; let i = index ">
+          <td>{{ ratelimitData?.[0].count }}</td>
+          <td>{{ ratelimitData?.[0].interval }}</td>
+          <td>{{ ratelimitData?.[0].intervalNum }}</td>
+          <td>{{ ratelimitData?.[0].limit }}</td>
+          <td>{{ ratelimitData?.[0].rateLimitType }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<!--<div>{{ ratelimitData?.[0].rateLimitType}}</div>-->

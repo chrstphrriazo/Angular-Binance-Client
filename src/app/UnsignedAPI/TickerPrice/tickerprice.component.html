@@ -1,0 +1,26 @@
+<h1 class="text-center">TICKER PRICE</h1>
+<div class="container-sm">
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <td><b>Symbol</b></td>
+            <td><b>Price</b></td>
+          </tr>
+        </thead>
+        <tr *ngFor="let data of tickerpriceSymbol; let i = index">
+          <td>
+            {{this.tickerpriceSymbol?.[i].symbol}}
+          </td>
+          <td>
+            {{this.tickerpriceSymbol?.[i].price}}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <a routerLink="/unsigned-api"> < Go Back!</a>
+</div>
+<router-outlet></router-outlet>

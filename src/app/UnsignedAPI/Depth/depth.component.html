@@ -1,0 +1,46 @@
+<h2 class="depthToken text-center"> BTC-USDT</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <tr>
+          <th colspan="2"><h3 class="text-center my-4">Bids</h3></th>
+        </tr>
+        <tr>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+        <tr *ngFor="let data of depthData?.bids; let i = index ">
+          <td>{{ this.depthData?.bids[i][0]}}</td>
+          <td>{{ this.depthData?.bids[i][1]}}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <tr>
+          <th colspan="2"><h3 class="text-center my-4">Asks</h3></th>
+        </tr>
+        <tr>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+        <tr *ngFor="let data of depthData?.asks; let i = index ">
+          <td>{{ this.depthData?.asks[i][0]}}</td>
+          <td>{{ this.depthData?.asks[i][1]}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="depthDataContainer">
+  <div>Price</div>
+  <div>Quantity</div>
+</div>
+<div class="depthDataContainer" *ngFor="let data of depthData?.asks; let i = index ">
+  <div>{{ this.depthData?.asks[i][0]}}</div>
+  <div>{{ this.depthData?.asks[i][1]}}</div>
+</div>-->
+

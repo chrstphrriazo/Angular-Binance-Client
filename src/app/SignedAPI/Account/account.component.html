@@ -1,0 +1,23 @@
+<h2 class="depthToken text-center"> SPOT ACCOUNT</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <table class="table table-bordered">
+        <tr>
+          <th colspan="3"><h3 class="text-center my-4">Account Balance</h3></th>
+        </tr>
+        <tr>
+          <th>Asset</th>
+          <th>Free</th>
+          <th>Locked</th>
+        </tr>
+        <tr *ngFor="let data of accountData?.balances; let i = index ">
+          <td>{{ this.accountData?.balances[i].asset }}</td>
+          <td>{{ this.accountData?.balances[i].free }}</td>
+          <td>{{ this.accountData?.balances[i].locked }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
