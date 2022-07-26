@@ -20,10 +20,22 @@ export class SignedApiService {
     );
   }
 
+  getAllOrdersDb() {
+    return this.http.get(
+      'https://localhost:7064/allorders/db'
+    );
+  }
+
   getRateLimitOrder() {
     return this.http.get(
       'https://localhost:7064/rateLimit/order'
     );
 
+  }
+
+  postAPIHeroes(body) {
+    return this.http.post<any>(
+      "https://localhost:7064/allorders", body
+    );
   }
 }

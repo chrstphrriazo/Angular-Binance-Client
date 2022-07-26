@@ -15,11 +15,11 @@
           <th>Rate Limit Type</th>
         </tr>
         <tr *ngFor="let data of ratelimitData; let i = index ">
-          <td>{{ ratelimitData?.[0].count }}</td>
-          <td>{{ ratelimitData?.[0].interval }}</td>
-          <td>{{ ratelimitData?.[0].intervalNum }}</td>
-          <td>{{ ratelimitData?.[0].limit }}</td>
-          <td>{{ ratelimitData?.[0].rateLimitType }}</td>
+          <td>{{ ratelimitData?.[i].count }}</td>
+          <td>{{ ratelimitData?.[i].interval }}</td>
+          <td>{{ ratelimitData?.[i].intervalNum }}</td>
+          <td>{{ ratelimitData?.[i].limit }}</td>
+          <td>{{ ratelimitData?.[i].rateLimitType }}</td>
         </tr>
       </table>
     </div>
